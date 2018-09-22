@@ -69,4 +69,7 @@ void vendor_load_properties()
     property_set("dalvik.vm.heaptargetutilization", "0.75");
     property_set("dalvik.vm.heapminfree", heapminfree);
     property_set("dalvik.vm.heapmaxfree", "8m");
+    property_override("ro.com.google.clientidbase", "android-xiaomi");
+    property_override("ro.com.google.clientidbase.ms", "android-xiaomi-rev1");
+
 }

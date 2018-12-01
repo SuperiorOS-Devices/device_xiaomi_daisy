@@ -363,6 +363,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \

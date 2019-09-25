@@ -15,7 +15,7 @@
 #
 
 $(call inherit-product, vendor/xiaomi/sakura/sakura-vendor.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_0_mr1.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -28,11 +28,6 @@ $(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/mixer_paths_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_mtp.xml
-
-# Camera
-PRODUCT_PACKAGES += \
-    camera.msm8953 \
-    libmm-qcamera
 
 # ConsumerIr
 PRODUCT_PACKAGES += \

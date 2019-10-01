@@ -13,8 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit from common msm8953-daisy
--include device/xiaomi/msm8953-daisy/BoardConfigCommon.mk
+# Inherit from common msm8953-common
+-include device/xiaomi/msm8953-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/daisy
 
@@ -34,12 +34,10 @@ TARGET_KERNEL_CONFIG := daisy_defconfig
 TARGET_KERNEL_VERSION := 3.18
 
 # Partitions
-TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := true
-TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
-TARGET_USES_MKE2FS := true
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-TARGET_COPY_OUT_VENDOR := vendor
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+BOARD_CACHEIMAGE_PARTITION_SIZE := 16777216
+BOARD_VENDORIMAGE_PARTITION_SIZE := 805306368
+BOARD_HAS_REMOVABLE_STORAGE := true
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wakeup_gesture"

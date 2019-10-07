@@ -652,6 +652,10 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
+# Fingerprint from daisy stock vendor
+vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
+vendor/etc/permissions/android.hardware.fingerprint.xml
+
 # QC RIL
 vendor/bin/hw/qcrild
 vendor/etc/init/qcrild.rc|f9c32f5e7a8e7f4a0df1dcce174de169b8d7c060

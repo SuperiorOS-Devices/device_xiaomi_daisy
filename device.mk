@@ -129,6 +129,10 @@ PRODUCT_PACKAGES += \
     libbt-vendor \
     libbthost_if
 
+# Bluetooth component overrides
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+
 # A/B
 AB_OTA_UPDATER := true
 

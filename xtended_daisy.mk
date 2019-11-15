@@ -22,6 +22,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product-if-exists, vendor/ExclusivePack/config.mk)
 #$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 
+#
+# All components inherited here go to system_ext image
+#
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
+
+
 # Inherit from daisy device
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 

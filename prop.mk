@@ -85,6 +85,10 @@ persist.vendor.dpm.feature=0
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.coresight.config=stm-events
 
+# dex2oat64
+PRODUCT_PROPERTY_OVERRIDES += \
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.enable.sglscale=1 \

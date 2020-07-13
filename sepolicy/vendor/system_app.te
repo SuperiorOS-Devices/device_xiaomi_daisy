@@ -118,3 +118,4 @@ allow system_app ctl_bootanim_prop:file { open };
 allow system_app ctl_console_prop:file { open };
 allow system_app ctl_interface_stop_prop:file { open };
 allow system_app boottime_prop:file { getattr };
+allow system_app storaged:binder { call };

@@ -22,3 +22,8 @@ allow untrusted_app_25 rootfs:dir { open };
 allow untrusted_app_25 adsprpc_prop:file { open };
 allow untrusted_app_25 apexd_prop:file { open };
 allow untrusted_app_25 apexd_prop:file { getattr };
+allow untrusted_app_25 bluetooth_prop:file { open };
+allow untrusted_app_25 bootloader_boot_reason_prop:file { open };
+allow untrusted_app_25 boottime_prop:file { open };
+allow untrusted_app_25 cnd_vendor_prop:file { open };
+allow untrusted_app_25 ctl_bootanim_prop:file { open };

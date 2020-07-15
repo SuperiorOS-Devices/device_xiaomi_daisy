@@ -17,3 +17,5 @@ allow hal_mlipay_default hwservicemanager_prop:file { read };
 allow hal_mlipay_default hwservicemanager_prop:file { open };
 allow hal_mlipay_default hwservicemanager_prop:file { getattr };
 allow hal_mlipay_default hwservicemanager:binder { call };
+allow hal_mlipay_default hwservicemanager:binder { transfer };
+allow hal_mlipay_default ifaa_prop:property_service { set };

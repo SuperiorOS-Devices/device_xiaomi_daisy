@@ -4,3 +4,4 @@ allow hwservicemanager init:file { open read };
 allow hwservicemanager init:process getattr;
 allow hwservicemanager runtime_event_log_tags_file:file read;
 allow hwservicemanager runtime_event_log_tags_file:file open;
+allow hwservicemanager hal_mlipay_default:binder { call };

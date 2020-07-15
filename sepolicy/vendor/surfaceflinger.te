@@ -6,3 +6,5 @@ allow surfaceflinger firmware_file:dir search;
 r_dir_file(surfaceflinger, sysfs_kgsl)
 
 allow surfaceflinger vendor_system_prop:file { getattr };
+allow surfaceflinger vendor_system_prop:file { read };
+allow surfaceflinger vendor_system_prop:file { open };

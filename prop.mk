@@ -141,17 +141,6 @@ persist.qfp=false
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.fm.transmitter=false
 
-# Framework boost
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.vendor.at_library=true \
-vendor.iop.enable_uxe=1 \
-vendor.perf.iop_v3.enable=true \
-vendor.perf.iop_v3.enable.debug=false \
-vendor.enable.prefetch=false \
-vendor.iop.enable_prefetch_ofr=false \
-vendor.perf.gestureflingboost.enable=true \
-vendor.perf.workloadclassifier.enable=true
-
 # Frp
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/config
@@ -244,12 +233,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.vsync_sf_event_phase_offset_ns=8000000 \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.max_virtual_display_dimension=4096
-
-PRODUCT_PROPERTY_OVERRIDES += \
-debug.sf.early_phase_offset_ns=1500000 \
-debug.sf.early_app_phase_offset_ns=1500000 \
-debug.sf.early_gl_phase_offset_ns=3000000 \
-debug.sf.early_gl_app_phase_offset_ns=15000000
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \

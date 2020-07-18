@@ -283,3 +283,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Dolby Plus
 PRODUCT_PROPERTY_OVERRIDES += \
 sys.keep_app_1=com.dolby.ds1appUI
+
+# Gboard
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.com.google.ime.corner_key_r=35 \
+ro.com.google.ime.kb_pad_port_b=1

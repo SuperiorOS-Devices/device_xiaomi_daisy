@@ -19,3 +19,5 @@ allow hal_mlipay_default hwservicemanager_prop:file { getattr };
 allow hal_mlipay_default hwservicemanager:binder { call };
 allow hal_mlipay_default hwservicemanager:binder { transfer };
 allow hal_mlipay_default ifaa_prop:property_service { set };
+allow hal_mlipay_default default_android_hwservice:hwservice_manager { add };
+allow hal_mlipay_default hidl_base_hwservice:hwservice_manager { add };

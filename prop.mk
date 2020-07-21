@@ -273,10 +273,6 @@ persist.vendor.usb.config.extra=none
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
 
-# APEX
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.apex.updatable=true
-
 #Dolby Plus
 PRODUCT_PROPERTY_OVERRIDES += \
 sys.keep_app_1=com.dolby.ds1appUI

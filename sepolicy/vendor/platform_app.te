@@ -77,3 +77,5 @@ allow platform_app ctl_bugreport_prop:file { getattr };
 allow platform_app ctl_console_prop:file { open };
 allow platform_app ctl_fuse_prop:file { open };
 allow platform_app vendor_system_prop:file { read };
+allow platform_app sensors_panel_prop:file { read };
+allow platform_app sysfs_graphics:dir { search };

@@ -7,3 +7,4 @@ allow radio theme_prop:file { open };
 allow radio theme_prop:file { getattr };
 allow radio sysfs_kgsl:dir { search };
 allow radio system_app_data_file:dir { getattr };
+allow radio vendor_system_prop:file { read };

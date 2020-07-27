@@ -18,6 +18,10 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Inherit some VendorExtra stuff.
+$(call inherit-product-if-exists, vendor/ExclusivePack/config.mk)
+$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
+
 # Inherit from daisy device
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 

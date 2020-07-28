@@ -1893,19 +1893,19 @@ vendor/lib64/libril-qc-hal-qmi.so|810d94acb1086711336f04084543c8fbf1cc9843
 vendor/lib64/qcrild_librilutils.so|22ae52ea7750c9011e3880852d800d94d54b030e
 
 # Mlipay
-vendor/bin/mlipayd@1.1
-vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
-vendor/lib64/libmlipay.so
-vendor/lib64/libmlipay@1.1.so
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
+vendor/bin/mlipayd@1.1|13e9167024fd2dc49a56ed27e583057408dcc1eb
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc|b5ab5bcd031fe4d9781b5911c0595eaeac8b80ea
+vendor/lib64/libmlipay.so|6cacf75f4a7eb50cbb7de384a3cfc1702a3a5f4a
+vendor/lib64/libmlipay@1.1.so|4dfa016779bcba8da2ff293e5112c678044c6474
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|d0bb854210433066945f9d6e7943d08a8435e746
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|785984e3c3b30671b78624484899dd418979cb56
 
 # Soter
--app/SoterService/SoterService.apk
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
-vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.soter@1.0.so
+-app/SoterService/SoterService.apk|c1c40b4931f18dcb3ca8bf100a7b4eab547b85a9
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|37f9501fa45a69ba3a27fd338704d76afc534bcb
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|1f27eb012650705a40fac8fec6d0b2dd10a1ec22
+vendor/lib64/vendor.qti.hardware.soter@1.0.so|b08f0d2e92e0adce42127b5f978fa6bb22326ce1
 
 # Support for all Controllers
 system/usr/keylayout/Vendor_045e_Product_028e.kl|b71f13883eec5b516a58b3359b4d7844bfe4227a

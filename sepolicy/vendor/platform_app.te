@@ -80,3 +80,4 @@ allow platform_app vendor_system_prop:file { read };
 allow platform_app sensors_panel_prop:file { read };
 allow platform_app sysfs_graphics:dir { search };
 allow platform_app sensors_panel_prop:file { open };
+allow platform_app sensors_panel_prop:file { getattr };

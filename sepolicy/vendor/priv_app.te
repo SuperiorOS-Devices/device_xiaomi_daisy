@@ -193,3 +193,4 @@ allow priv_app rild_file:file { getattr };
 allow priv_app device_config_input_native_boot_prop:file { open };
 allow priv_app device_config_input_native_boot_prop:file { getattr };
 allow priv_app device_config_media_native_prop:file { open };
+allow priv_app device_logging_prop:file { open };

@@ -30,4 +30,7 @@
     <!-- Device specific doze package -->
     <string name="config_customDozePackage">com.custom.ambient.display/com.custom.ambient.display.DozeSettings</string>
 
+    <!-- Ultra Power Saving -->
+    <bool name="config_supportUltraPowerSaving">false</bool>
+
 </resources>

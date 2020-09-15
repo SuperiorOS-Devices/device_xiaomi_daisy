@@ -451,6 +451,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_HOST_PACKAGES += \
     signapk
 
+# Shims
+PRODUCT_PACKAGES += \
+    libdpmframework_shim
+
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
     textclassifier.bundle1

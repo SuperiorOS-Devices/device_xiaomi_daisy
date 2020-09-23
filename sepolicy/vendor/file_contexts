@@ -74,7 +74,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.xiaomi_8996       u:object_r:hal_usb_default_exec:s0
 
 # Power HAL
-/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.2-service\.daisy u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service-qti\.daisy   u:object_r:hal_power_default_exec:s0
 
 # IOp
 /(vendor|system/vendor)/lib(64)?/vendor\.qti\.hardware\.iop@1\.0\.so    u:object_r:same_process_hal_file:s0

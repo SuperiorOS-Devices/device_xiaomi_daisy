@@ -310,3 +310,7 @@ dalvik.vm.heapmaxfree=16m
 # Charger
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.charger.enable_suspend=true
+
+# EBPF
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.kernel.ebpf.supported=true

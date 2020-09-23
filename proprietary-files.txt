@@ -1888,6 +1888,24 @@ vendor/firmware/goodixfp.b05|cb9c666ce9653510954af7380936f5ccd3e7cc37
 vendor/firmware/goodixfp.b06|826951cf2ced420f537a17f97eec815f89f373b0
 vendor/firmware/goodixfp.mdt|4eb8e95418a3512469cc91bb8d01cecc401d42d0
 
+# Gatekeeper - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+
+# Keymaster- from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
+vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/lib/libkeymasterdeviceutils.so
+vendor/lib/libkeymasterprovision.so
+vendor/lib/libkeymasterutils.so
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/lib64/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterprovision.so
+vendor/lib64/libkeymasterutils.so
+
 # QC RIL - from LA.UM.8.6.2.r1-08400-89xx.0
 vendor/bin/hw/qcrild|e6388657a78502c6211ff7dd54d1edbc7e97f148
 vendor/etc/init/qcrild.rc|f9c32f5e7a8e7f4a0df1dcce174de169b8d7c060

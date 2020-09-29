@@ -34,6 +34,14 @@ PRODUCT_BOARD_PLATFORM := msm8953
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# OTA
+PRODUCT_HOST_PACKAGES += \
+    signapk
+
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 29
+PRODUCT_EXTRA_VNDK_VERSIONS := 29
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
@@ -187,7 +195,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-impl \
-    android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.composer@2.2-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
@@ -258,11 +266,11 @@ PRODUCT_PACKAGES += \
     ims_ext_common.xml
 
 # IFAA manager
-PRODUCT_PACKAGES += \
-    org.ifaa.android.manager
+#PRODUCT_PACKAGES += \
+#    org.ifaa.android.manager
 
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
+#PRODUCT_BOOT_JARS += \
+#    org.ifaa.android.manager
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -295,7 +303,8 @@ PRODUCT_PACKAGES += \
 # Codec2
 PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
-    libcodec2_hidl@1.0.vendor
+    libcodec2_hidl@1.0.vendor \
+    libavservices_minijail_vendor
 
 # Codec2 modules
 PRODUCT_PACKAGES += \
@@ -406,6 +415,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-lite-vendorcompat \
+    libprotobuf-cpp-full-vendorcompat \
+
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/codec2.vendor.ext.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext.policy \
@@ -451,7 +464,19 @@ VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
 # VNDK
 PRODUCT_PACKAGES += \
-    vndk-sp
+    libstdc++.vendor \
+    vndk-sp \
+    com.android.vndk.current.on_vendor
+
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full.so \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite.so
+
+# HWBinder
+PRODUCT_PACKAGES += \
+    libhwbinder \
+    libhwbinder.vendor
+
 
 # Verity
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name/system
@@ -502,8 +527,8 @@ PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
 
 # Doze
 PRODUCT_PACKAGES += \

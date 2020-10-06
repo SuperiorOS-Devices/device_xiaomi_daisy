@@ -286,6 +286,20 @@ persist.sys.wfd.virtual=0
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.qc2.use.bqpool=1
 
+#GMS
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.com.google.clientidbase=android-xiaomi \
+ro.com.google.clientidbase.ms=android-lge-rev1
+
+# Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+dalvik.vm.heapstartsize=16m \
+dalvik.vm.heapgrowthlimit=256m \
+dalvik.vm.heapsize=512m \
+dalvik.vm.heaptargetutilization=0.75 \
+dalvik.vm.heapminfree=4m \
+dalvik.vm.heapmaxfree=8m
+
 # Charger
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.charger.enable_suspend=true

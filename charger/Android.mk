@@ -8,7 +8,7 @@ LOCAL_MODULE       := poweroffcharge
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_SRC_FILES    := $(LOCAL_MODULE)
-LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT_SBIN)
+LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)/sbin
 LOCAL_REQUIRED_MODULES := \
     abnormaltemp abnormaltemp_font background chargeLogo \
     charging_green charging_red error neocharge number_green_0 \

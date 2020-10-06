@@ -161,8 +161,8 @@ TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # Clang Version
-TARGET_KERNEL_CLANG_VERSION := xtended
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-xtended/bin
+TARGET_KERNEL_CLANG_VERSION := proton
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 
 # Media

@@ -596,9 +596,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <sepolicy>
-        <version>0.0</version>
-    </sepolicy>
     <hal format="hidl">
         <name>vendor.xiaomi.hardware.mlipay</name>
         <transport>hwbinder</transport>

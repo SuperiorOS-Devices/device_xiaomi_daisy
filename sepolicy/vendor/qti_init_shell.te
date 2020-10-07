@@ -40,7 +40,7 @@ allow qti_init_shell proc_dirty:file { write };
 allow qti_init_shell qti_init_shell:capability { dac_override };
 allow qti_init_shell sysfs_devices_system_cpu:dir { add_name };
 allow qti_init_shell vendor_file:file { entrypoint };
-typeattribute qti_init_shell data_between_core_and_vendor_violators;
+#typeattribute qti_init_shell data_between_core_and_vendor_violators;
 allow qti_init_shell qti_init_shell:capability { kill };
 allow qti_init_shell vfat:dir { search };
 allow qti_init_shell fm_prop:property_service set;

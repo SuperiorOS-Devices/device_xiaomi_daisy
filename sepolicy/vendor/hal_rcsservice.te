@@ -1,1 +1,2 @@
 allow hal_rcsservice sysfs:file { open read };
+allow hal_rcsservice default_android_hwservice:hwservice_manager find;

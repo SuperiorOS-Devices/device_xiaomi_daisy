@@ -29,6 +29,7 @@ allow hal_fingerprint_default fingerprint_persist_file:file r_file_perms;
 
 binder_call(hal_fingerprint_default, goodix_fingerprint_vndservice)
 allow hal_fingerprint_default goodix_fingerprint_vndservice:service_manager add;
+allow hal_fingerprint_default system_data_root_file:file { getattr open read };
 
 allow hal_fingerprint_default goodixfingerprintd_service:service_manager add;
 

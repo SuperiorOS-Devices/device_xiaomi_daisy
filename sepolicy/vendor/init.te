@@ -6,6 +6,8 @@ allow init sysfs_leds:lnk_file read;
 
 # offmode charging daemon
 allow init rootfs:file mounton;
+allow init hal_drm_hwservice:hwservice_manager { add find };
+allow init default_android_hwservice:hwservice_manager find;
 
 allow init self:capability2 block_suspend;
 allow init socket_device:sock_file { create setattr unlink };

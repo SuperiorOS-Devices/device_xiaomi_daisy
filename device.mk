@@ -148,13 +148,26 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-service \
+	android.hardware.boot@1.0-impl.recovery \
     bootctrl.msm8953 \
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+PRODUCT_PACKAGES += \
+    bootctrl.msm8953.recovery \
+	
 # Boot SPL
 BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
+
+# Binder
+PRODUCT_PACKAGES += \
+    libhwbinder \
+    libhidltransport
+
+# Board
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := msm8953
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -176,6 +189,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
+	
+#HAls
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/display
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/audio
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/media
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -209,7 +227,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.2-service.clearkey
+    android.hardware.drm@1.3-service.clearkey
 
 # Spectrum
 PRODUCT_PACKAGES += \
@@ -242,6 +260,11 @@ PRODUCT_COPY_FILES += \
 # Healthd
 PRODUCT_PACKAGES += \
     chargeonlymode
+
+# Healthd
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0-impl \
+    android.hardware.health@2.0-service
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -326,10 +349,15 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service-qti
+    android.hardware.power-service-qti
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+	
+#Prebuilts
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite-v29.so \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-v29.so
 
 # Properties
 -include device/xiaomi/daisy/prop.mk
@@ -406,9 +434,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
+# Signapk
+PRODUCT_HOST_PACKAGES += \
+    signapk
+	
+# SurfaceFlinger
+TARGET_USE_QCOM_SURFACEFLINGER := true
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/xiaomi/daisy
+    $(LOCAL_PATH)
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \

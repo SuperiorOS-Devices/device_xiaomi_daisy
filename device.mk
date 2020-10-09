@@ -523,6 +523,7 @@ PRODUCT_PACKAGES += \
     wificond \
     wpa_supplicant \
     wpa_supplicant.conf \
+    android.hardware.tetheroffload.config@1.0 \
     WifiOverlay
 
 PRODUCT_COPY_FILES += \

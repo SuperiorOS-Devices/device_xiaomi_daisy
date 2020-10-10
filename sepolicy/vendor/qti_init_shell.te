@@ -47,3 +47,5 @@ allow qti_init_shell fm_prop:property_service set;
 r_dir_file(qti_init_shell, vfat)
 allow qti_init_shell self:socket create;
 allow qti_init_shell configfs:dir { write };
+allow qti_init_shell configfs:dir { add_name };
+allow qti_init_shell configfs:file { create };

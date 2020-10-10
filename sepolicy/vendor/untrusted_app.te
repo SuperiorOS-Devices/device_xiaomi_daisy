@@ -159,7 +159,7 @@ allow untrusted_app ctl_interface_stop_prop:file { open };
 allow untrusted_app ctl_sigstop_prop:file { open };
 allow untrusted_app proc_version:file { open };
 allow untrusted_app proc_loadavg:file { read open };
-allow untrusted_app sysfs:file { read };
+allow untrusted_app sysfs:file { read open getattr };
 allow untrusted_app sysfs_kgsl:lnk_file { read };
 allow untrusted_app sysfs_kgsl:file { getattr };
 allow untrusted_app block_device:dir { search };

@@ -14,3 +14,4 @@ allow zygote vendor_system_prop:file { getattr };
 allow zygote system_file:dir { write };
 allow zygote system_data_file:sock_file { write };
 allow zygote system_server:unix_dgram_socket { sendto };
+allow zygote exported_camera_prop:file { read open getattr };

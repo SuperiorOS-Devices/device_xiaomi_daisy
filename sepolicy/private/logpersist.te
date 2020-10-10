@@ -1,0 +1,7 @@
+allow logpersist cache_file:lnk_file { read };
+allow logpersist logpersist:capability { dac_override };
+allow logpersist cache_file:dir { read open write add_name };
+allow logpersist cache_file:file { create };
+allow logpersist cache_file:file { append open };
+allow logpersist cache_file:file { ioctl };
+allow logpersist cache_file:file { getattr };

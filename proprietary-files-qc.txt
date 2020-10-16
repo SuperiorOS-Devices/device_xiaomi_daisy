@@ -820,19 +820,6 @@ vendor/bin/thermal-engine|68f8be6513214025470c60a8534970de66c96397
 -vendor/lib64/libthermalclient.so|20f1fd238fc81bf1c6828ec416121c0ef66e0df1
 vendor/lib64/libthermalioctl.so|6eed5b8ca6989809eac27abd4af19bbd6f3845ee
 
-# Adreno Team Exclusive Thermals for Snapdragon 625/626
-system/lib/android.hardware.thermal@1.0.so|d842358de73e0cd6cae26936c72c6a6a34024426
-system/lib/android.hardware.thermal@1.0.so|d842358de73e0cd6cae26936c72c6a6a34024426
-system/lib64/android.hardware.thermal@1.0.so|7d9beef21b4d35aa56b719a081ae701ae5468b61
-system/lib64/android.hardware.thermal@1.1.so|1999c5396329ab61fa0d3947d3e60920f23d6e85
-vendor/bin/hw/android.hardware.thermal@1.0-service|1484365522256a13dca394134e03edb54d243a27
-vendor/etc/init/android.hardware.thermal@1.0-service.rc|83a76be56b9b0843ff3f2c06186c63156a459acb
-vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
-vendor/lib/hw/android.hardware.thermal@1.0-impl.so|9f18fce851760bba7cf4a609273d40d90d53a886
-vendor/lib/hw/thermal.msm8953.so|608f64eac65d3384096b8daafce555a2a53593ba
-vendor/lib64/hw/android.hardware.thermal@1.0-impl.so|b3ec4c0298855157f6106cdabf439342987ef17e
-vendor/lib64/hw/thermal.msm8953.so|c0ae8f8b310026a8500776ebbb20a7e0d022fc29
-
 # Time services - from LA.UM.8.6.2.r1-06600-89xx.0
 -vendor/app/TimeService/TimeService.apk|4a37afd1395758d946580af184a738e3c657b1e2
 vendor/bin/time_daemon|e23ee23d5bdc059273c58dac866cde7b090c764c

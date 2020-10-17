@@ -145,11 +145,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     otapreopt_script
 
-# Binder
-PRODUCT_PACKAGES += \
-    libhwbinder \
-    libhwbinder.vendor
-
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl.recovery \
@@ -272,14 +267,14 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
-    android.hidl.manager@1.0
-
-# VNDK HIDL 
-PRODUCT_PACKAGES += \
-    libhidltransport \
-    libhidltransport.vendor \
+    android.hidl.manager@1.0 \
     libhwbinder \
     libhwbinder.vendor
+
+# HIDL transport
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor
 
 # HW crypto
 PRODUCT_PACKAGES += \
@@ -436,10 +431,6 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libcnefeatureconfig \
     libxml2 \
-    libprotobuf-cpp-full \
-    libprotobuf-cpp-full.vendor \
-    libprotobuf-cpp-lite \
-    libprotobuf-cpp-lite.vendor \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
@@ -506,9 +497,7 @@ VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package \
-    libstdc++.vendor \
-    libcutils.so \
-    com.android.vndk.current.on_vendor
+    libstdc++.vendor
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite.so \

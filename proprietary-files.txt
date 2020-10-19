@@ -18,6 +18,7 @@ vendor/lib/libcapiv2vop.so|1be48a1445375458880a28272a0538ba8364d523
 vendor/lib/libdualcameraddm.so|48662b4cfce7f8f3ae086ed1798ca34ff9bafbd5
 vendor/lib/libflash_pmic.so|3383748f8aea5c840b836cf6575e75d95b44b6f5
 vendor/lib/libft2vendor.so|9a6d6558d1fc25958b10acbe395170a08f2f9d39
+vendor/lib/libgui_vendor.so|90c020e795df4dfdfd6a5722816929069161b42c
 vendor/lib/libjpegdhw.so|7da0d3a4f6b94f13b8b55076dd1ebcbdd39059ed
 vendor/lib/libjpegdmahw.so|c4ef5881e255c4ac60244cc20327e7ae08c5b835
 vendor/lib/libjpegehw.so|29d4691216275f03a2bd3db6531e78412c2ecba6

@@ -529,8 +529,8 @@ PRODUCT_PACKAGES += \
     wificond \
     wpa_supplicant \
     wpa_supplicant.conf \
-    android.hardware.tetheroffload.config@1.0 \
-    WifiOverlay
+    android.hardware.tetheroffload.config@1.0
+
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \

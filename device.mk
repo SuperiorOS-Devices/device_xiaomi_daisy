@@ -495,8 +495,7 @@ VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
 # VNDK
 PRODUCT_PACKAGES += \
-    vndk_package \
-    libstdc++.vendor
+    vndk-sp
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite.so \

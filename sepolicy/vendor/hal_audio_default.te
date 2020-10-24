@@ -13,7 +13,7 @@ get_prop(hal_audio_default, dirac_prop)
 set_prop(hal_audio_default, dirac_prop)
 allow hal_audio_default hal_audio_default:process { execmem };
 allow hal_audio_default default_android_hwservice:hwservice_manager { find };
-allow hal_audio_default diag_device:chr_file { read write };
+allow hal_audio_default diag_device:chr_file { read write open };
 
 # Dolby
 allow hal_audio_default hal_dms_default:binder { transfer call };

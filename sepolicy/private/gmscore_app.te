@@ -1,0 +1,10 @@
+allow gmscore_app adbd_prop:file { open read getattr };
+#allow gmscore_app adsprpc_prop:file { open read getattr };
+#allow gmscore_app bg_boot_complete_prop:file { open read getattr };
+#allow gmscore_app vendor_system_prop:file { open read getattr };
+#allow gmscore_app bg_daemon_prop:file { open read getattr };
+allow gmscore_app apexd_prop:file { open getattr };
+allow gmscore_app apk_verity_prop:file { open read getattr };
+allow gmscore_app vendor_file:file { open read getattr };
+allow gmscore_app bluetooth_a2dp_offload_prop:file { open read getattr };
+allow gmscore_app theme_prop:file { open read getattr };

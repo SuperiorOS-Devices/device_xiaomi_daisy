@@ -4,3 +4,5 @@ allow netd proc_net:file create;
 allow netd device:file { open write };
 allow netd netd:capability { sys_admin };
 allow netd untrusted_app:unix_stream_socket { read write };
+allow netd sysfs_net:dir { add_name };
+allow netd sysfs_net:file { create };

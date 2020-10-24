@@ -8,3 +8,6 @@ allow radio theme_prop:file { getattr };
 allow radio sysfs_kgsl:dir { search };
 allow radio system_app_data_file:dir { getattr };
 allow radio vendor_system_prop:file { read };
+allow radio adbd_prop:file { open getattr };
+allow radio adsprpc_prop:file { open getattr };
+allow radio apexd_prop:file { open getattr };

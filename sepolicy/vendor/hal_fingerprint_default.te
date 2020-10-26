@@ -95,3 +95,4 @@ allow hal_fingerprint_default kcal_dev:dir { search };
 allow hal_fingerprint_default kcal_dev:file { read };
 allow hal_fingerprint_default kcal_dev:file { open };
 allow hal_fingerprint_default vfat:dir { search };
+allow hal_fingerprint_default default_android_hwservice:hwservice_manager { find };

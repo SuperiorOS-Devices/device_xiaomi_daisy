@@ -52,6 +52,8 @@
     <allow-in-power-save package="com.lsdroid.cerberus" />
     <allow-in-power-save package="com.lsdroid.cerberuss" />
     <allow-in-power-save package="com.skyhook.blp" />
+    <allow-in-power-save package="com.qualcomm.location" />
+    <allow-in-power-save package="com.qualcomm.location.XT" />
 
     <!-- These telephony applications need access to non-[System]SDK APIs -->
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteserver" />

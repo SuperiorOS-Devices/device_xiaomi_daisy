@@ -11,7 +11,7 @@ allow untrusted_app_25 property_socket:sock_file { write };
 allow untrusted_app_25 init:unix_stream_socket { connectto };
 allow untrusted_app_25 default_prop:property_service { set };
 allow untrusted_app_25 proc_vmstat:file { open };
-allow untrusted_app_25 persist_camera_prop:file { open read getattr };
+allow untrusted_app_25 vendor_persist_camera_prop:file { open read getattr };
 allow untrusted_app_25 proc_qtaguid_stat:file { read };
 allow untrusted_app_25 proc_vmstat:file { getattr };
 allow untrusted_app_25 radio_data_file:dir { getattr };

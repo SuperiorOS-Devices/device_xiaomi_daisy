@@ -539,6 +539,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
+# HALS 
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media 
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8996/display 
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio 
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/display 
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/audio 
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/media
+
 # Hotword Enrollement
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml \

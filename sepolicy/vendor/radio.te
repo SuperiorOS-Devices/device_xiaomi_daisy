@@ -11,3 +11,7 @@ allow radio vendor_system_prop:file { read };
 allow radio adbd_prop:file { open getattr };
 allow radio adsprpc_prop:file { open getattr };
 allow radio apexd_prop:file { open getattr };
+allow radio cnd:binder { call };
+allow radio unlabeled:file { open read getattr };
+allow radio qcom_ims_prop:file { open read getattr };
+allow radio cnd:binder { transfer };

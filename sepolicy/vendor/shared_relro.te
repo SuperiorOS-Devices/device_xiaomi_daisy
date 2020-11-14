@@ -1,0 +1,1 @@
+allow shared_relro unlabeled:file { open read getattr };

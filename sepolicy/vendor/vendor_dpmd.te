@@ -1,2 +1,3 @@
+allow vendor_dpmd diag_device:chr_file { read write open ioctl };
 allow vendor_dpmd vendor_file:file { read open getattr execute };
 allow vendor_dpmd vendor_dpmd:capability { sys_admin };

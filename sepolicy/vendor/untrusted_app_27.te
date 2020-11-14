@@ -228,3 +228,6 @@ allow untrusted_app_27 bluetooth_audio_hal_prop:file { open read getattr };
 allow untrusted_app_27 boottime_public_prop:file { open read getattr };
 allow untrusted_app_27 charger_prop:file { open read getattr };
 allow untrusted_app_27 cold_boot_done_prop:file { open read getattr };
+allow untrusted_app_27 cpu_variant_prop:file { open read getattr };
+allow untrusted_app_27 ctl_apexd_prop:file { open read getattr };
+allow untrusted_app_27 ctl_gsid_prop:file { open read getattr };

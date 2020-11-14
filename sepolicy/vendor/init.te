@@ -98,3 +98,4 @@ allow init ipacm:process { noatsecure };
 allow init sysfs_kgsl:file { setattr };
 allow init sysfs_kgsl:lnk_file { read };
 allow init hal_power_stats_hwservice:hwservice_manager { find };
+allow init su:process { transition };

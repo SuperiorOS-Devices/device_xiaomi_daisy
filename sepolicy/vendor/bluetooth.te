@@ -10,3 +10,5 @@ allow bluetooth sysfs_kgsl:dir { search };
 
 # Binder call with gpuservice
 binder_call(bluetooth, gpuservice)
+
+allow bluetooth unlabeled:file { open read getattr };

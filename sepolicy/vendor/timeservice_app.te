@@ -1,0 +1,1 @@
+allow timeservice_app unlabeled:file { open read getattr };

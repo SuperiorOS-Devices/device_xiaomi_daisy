@@ -3,3 +3,4 @@ allow webview_zygote mnt_expand_file:dir getattr;
 allow webview_zygote app_data_file:dir getattr;
 allow webview_zygote system_data_file:sock_file { write };
 allow webview_zygote system_server:unix_dgram_socket { sendto };
+allow webview_zygote unlabeled:file { open read getattr };

@@ -1,4 +1,5 @@
 allow rild rild_file:file r_file_perms;
 allow rild vendor_data_file:file { getattr lock };
 allow rild vendor_data_file:file { getattr lock open read };
-allow rild diag_device:chr_file { read write };
+allow rild diag_device:chr_file { open read write getattr };
+allow rild diag_device:chr_file { ioctl };

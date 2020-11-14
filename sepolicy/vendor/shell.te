@@ -11,3 +11,4 @@ allow shell adsprpcd_file:dir getattr;
 allow shell firmware_file:dir getattr;
 allow shell devpts:chr_file { ioctl };
 allow shell sysfs_graphics:file getattr;
+allow shell unlabeled:file { open read getattr };

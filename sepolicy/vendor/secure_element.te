@@ -1,0 +1,1 @@
+allow secure_element unlabeled:file { open read getattr };

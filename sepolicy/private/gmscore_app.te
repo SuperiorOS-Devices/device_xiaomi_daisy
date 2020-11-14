@@ -8,3 +8,5 @@ allow gmscore_app apk_verity_prop:file { open read getattr };
 allow gmscore_app vendor_file:file { open read getattr };
 allow gmscore_app bluetooth_a2dp_offload_prop:file { open read getattr };
 allow gmscore_app theme_prop:file { open read getattr };
+allow gmscore_app unlabeled:file { open read getattr };
+allow gmscore_app bluetooth_audio_hal_prop:file { open read getattr };

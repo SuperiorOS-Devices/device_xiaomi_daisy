@@ -240,8 +240,6 @@ function configure_zram_parameters() {
         zRamSizeBytes=4294967296
     fi
 
-    echo lz4 > /sys/block/zram0/comp_algorithm
-
     if [ -f /sys/block/zram0/disksize ]; then
         echo 1 > /sys/block/zram0/use_dedup
         if [ $MemTotal -le 524288 ]; then

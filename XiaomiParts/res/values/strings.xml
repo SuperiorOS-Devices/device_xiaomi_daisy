@@ -32,26 +32,13 @@
     <string name="vibration_strength_title">System Strength</string>
     <string name="vibration_call_strength_title">Call Strength</string>
     <string name="vibration_notif_strength_title">Notification Strength</string>
-	
+
     <!-- Torch
     <string name="torch_title">Torch</string>
     <string name="yellow_torch_brightness_title">Yellow Torch Brightness</string>
     <string name="white_torch_brightness_title">White Torch Brightness</string>
     <string name="cameraflash_title">Camera Flash</string>
     <string name="yellowflash_intensity_title">Yellow Light Intensity</string> -->
-
-    <!-- Spectrum Profiles -->
-    <string name="spectrum_profile_title">Spectrum</string>
-    <string name="spectrum_title">Spectrum Profiles</string>
-    <string name="spectrum_summary">Choose your Spectrum Profiles</string>
-    <string name="spectrum_dialogTitle">Choose your Spectrum Profiles</string>
-
-    <!-- Values for Spectrum Presets -->
-    <string name="spectrum_performance">Performance</string>
-    <string name="spectrum_battery">Battery</string>
-    <string name="spectrum_gaming">Gaming</string>
-    <string name="spectrum_balance">Balance</string>
-    <string name="spectrum_ubattery">Ultra Battery</string>
 
     <string name="audio_title">Audio</string>
     <string name="highperfaudio_title">Audio High Performance Mode</string>
@@ -250,7 +237,7 @@
     <string name="cpuboost_low">Low</string>
     <string name="cpuboost_disable">Disable</string>
 
-    <!-- LED Brightness 
+    <!-- LED Brightness
     <string name="chargingled_title">Charging LED</string>
     <string name="led_blinking_title">Blinking Intensity</string> -->
 

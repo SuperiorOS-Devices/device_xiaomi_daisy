@@ -27,7 +27,7 @@
             app:min="1"
             android:icon="@drawable/ic_torch"
             android:title="@string/white_torch_brightness_title" />
-	
+
         <com.xiaomi.parts.preferences.CustomSeekBarPreference
             android:defaultValue="100"
             android:key="yellow_torch_brightness"
@@ -46,7 +46,7 @@
             android:defaultValue="80"
             android:key="yellow_flash"
             android:icon="@drawable/ic_flash"
-            android:title="@string/yellowflash_intensity_title" /> 
+            android:title="@string/yellowflash_intensity_title" />
 
     </PreferenceCategory> -->
 
@@ -104,22 +104,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="spectrum_profile"
-        android:title="@string/spectrum_profile_title">
-
-        <com.xiaomi.parts.preferences.SecureSettingListPreference
-            android:defaultValue="0"
-            android:dialogTitle="@string/spectrum_dialogTitle"
-            android:entries="@array/spectrum_profiles"
-            android:entryValues="@array/spectrum_values"
-            android:key="spectrum"
-            android:summary="@string/spectrum_summary"
-            android:icon="@drawable/ic_spectrum" 
-            android:title="@string/spectrum_title" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
             android:title="@string/display_gestures">
 
         <PreferenceScreen
@@ -149,7 +133,7 @@
             android:entryValues="@array/cpuboost_values"
             android:key="cpuboost"
             android:summary="@string/cpuboost_summary"
-            android:icon="@drawable/ic_cpuboost" 
+            android:icon="@drawable/ic_cpuboost"
             android:title="@string/cpuboost_title" />
 
         <com.xiaomi.parts.preferences.SecureSettingListPreference
@@ -159,7 +143,7 @@
             android:entryValues="@array/gpuboost_values"
             android:key="gpuboost"
             android:summary="@string/gpuboost_summary"
-            android:icon="@drawable/ic_gpuboost" 
+            android:icon="@drawable/ic_gpuboost"
             android:title="@string/gpuboost_title" />
 
     </PreferenceCategory>
@@ -196,7 +180,7 @@
             android:entryValues="@array/cpucore_values"
             android:key="cpucore"
             android:summary="@string/cpucore_summary"
-            android:icon="@drawable/ic_cpucore" 
+            android:icon="@drawable/ic_cpucore"
             android:title="@string/cpucore_title" />
     </PreferenceCategory>
 
@@ -211,7 +195,7 @@
             android:entryValues="@array/lkmprofile_values"
             android:key="lkmprofile"
             android:summary="@string/lkmprofile_summary"
-            android:icon="@drawable/ic_lkm" 
+            android:icon="@drawable/ic_lkm"
             android:title="@string/lkmprofile_title" />
 
         <com.xiaomi.parts.preferences.SecureSettingListPreference
@@ -221,7 +205,7 @@
             android:entryValues="@array/tcpcongestion_values"
             android:key="tcpcongestion"
             android:summary="@string/tcpcongestion_summary"
-            android:icon="@drawable/ic_tcp" 
+            android:icon="@drawable/ic_tcp"
             android:title="@string/tcpcongestion_title" />
     </PreferenceCategory>
 
@@ -341,11 +325,11 @@
             android:icon="@drawable/ic_earpiece"
             android:title="@string/earpiece_gain" />
 
-        <com.xiaomi.parts.preferences.SecureSettingCustomSeekBarPreference 
+        <com.xiaomi.parts.preferences.SecureSettingCustomSeekBarPreference
             android:defaultValue="0"
-            android:key="speaker_gain" 
+            android:key="speaker_gain"
             android:max="20"
-            app:min="-10" 
+            app:min="-10"
             android:icon="@drawable/ic_speaker"
             android:title="@string/speaker_gain" />
 

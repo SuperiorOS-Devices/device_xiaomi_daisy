@@ -392,10 +392,6 @@ PRODUCT_PACKAGES += \
     move_time_data.sh \
     move_wifi_data.sh \
     ueventd.qcom.rc \
-    init.gpuboost.rc \
-    init.gpuboost.sh \
-    init.cpuboost.rc \
-    init.cpuboost.sh \
     init.parallax.rc \
     init.parallax.sh \
     init.camera.rc \

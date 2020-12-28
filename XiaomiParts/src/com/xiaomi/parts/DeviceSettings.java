@@ -80,8 +80,6 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String EARPIECE_GAIN_PATH = "/sys/kernel/sound_control/earpiece_gain";
     public static final String PREF_SPEAKER_GAIN = "speaker_gain";
     public static final String SPEAKER_GAIN_PATH = "/sys/kernel/sound_control/speaker_gain";
-    public static final String PREF_USB_FASTCHARGE = "fastcharge";
-    public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
     public static final String PREF_KEY_FPS_INFO = "fps_info";
 
     public static final String PREF_MSM_TOUCHBOOST = "touchboost";
@@ -144,11 +142,6 @@ public class DeviceSettings extends PreferenceFragment implements
         mYellowTorchBrightness.setOnPreferenceChangeListener(this); */
 
         PreferenceCategory displayCategory = (PreferenceCategory) findPreference(CATEGORY_DISPLAY);
-
-        SwitchPreference usbfastCharger = (SwitchPreference) findPreference(PREF_USB_FASTCHARGE);
-        usbfastCharger.setEnabled(FileUtils.fileWritable(USB_FASTCHARGE_PATH));
-        usbfastCharger.setChecked(FileUtils.getFileValueAsBoolean(USB_FASTCHARGE_PATH, true));
-        usbfastCharger.setOnPreferenceChangeListener(this);
 
         mKcal = findPreference(PREF_DEVICE_KCAL);
 
@@ -328,10 +321,6 @@ public class DeviceSettings extends PreferenceFragment implements
                     getContext().startService(new Intent(getContext(), DiracService.class));
                     DiracService.sDiracUtils.setLevel(String.valueOf(value));
                 }
-                break;
-
-            case PREF_USB_FASTCHARGE:
-                FileUtils.setValue(USB_FASTCHARGE_PATH, (boolean) value);
                 break;
 
             case PREF_HEADPHONE_GAIN:

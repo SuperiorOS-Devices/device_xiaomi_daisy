@@ -205,12 +205,6 @@
     <!-- Label for feature switch -->
     <string name="switch_bar_off">Off</string>
 
-    <!-- Touchboost -->
-    <string name="boost_title">Boost</string>
-    <string name="touchboost_title">Enable Touchboost</string>
-    <string name="touchboost_summary">Boost cpu when touch detected for smooth experience</string>
-
-
     <!-- LED Brightness
     <string name="chargingled_title">Charging LED</string>
     <string name="led_blinking_title">Blinking Intensity</string> -->

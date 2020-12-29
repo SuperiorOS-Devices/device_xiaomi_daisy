@@ -159,8 +159,6 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
                 DeviceSettings.PREF_SPEAKER_GAIN, 0));
         FileUtils.setValue(DeviceSettings.HIGH_AUDIO_PATH, Settings.Secure.getInt(context.getContentResolver(),
                 DeviceSettings.HIGH_PERF_AUDIO, 0));
-        FileUtils.setValue(DeviceSettings.MSM_TOUCHBOOST_PATH, Settings.Secure.getInt(context.getContentResolver(),
-                DeviceSettings.PREF_MSM_TOUCHBOOST, 0));
         // Dirac
         context.startService(new Intent(context, DiracService.class));
 

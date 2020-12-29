@@ -82,8 +82,6 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String SPEAKER_GAIN_PATH = "/sys/kernel/sound_control/speaker_gain";
     public static final String PREF_KEY_FPS_INFO = "fps_info";
 
-    public static final String PREF_MSM_TOUCHBOOST = "touchboost";
-    public static final String MSM_TOUCHBOOST_PATH = "/sys/module/msm_performance/parameters/touchboost";
     /* public static final String KEY_FLASH = "yellow_flash"; */
 
     public static final String HIGH_PERF_AUDIO = "highperfaudio";
@@ -118,7 +116,6 @@ public class DeviceSettings extends PreferenceFragment implements
     private CustomSeekBarPreference mEarpieceGain;
     private CustomSeekBarPreference mSpeakerGain;
     private SecureSettingSwitchPreference mBacklightDimmer;
-    private SecureSettingSwitchPreference mTouchboost;
     private SecureSettingListPreference mCamera;
 
     private static Context mContext;
@@ -224,15 +221,6 @@ public class DeviceSettings extends PreferenceFragment implements
 
         mSpeakerGain = (CustomSeekBarPreference) findPreference(PREF_SPEAKER_GAIN);
         mSpeakerGain.setOnPreferenceChangeListener(this);
-
-        if (FileUtils.fileWritable(MSM_TOUCHBOOST_PATH)) {
-            mTouchboost = (SecureSettingSwitchPreference) findPreference(PREF_MSM_TOUCHBOOST);
-            mTouchboost.setEnabled(Touchboost.isSupported());
-            mTouchboost.setChecked(Touchboost.isCurrentlyEnabled(this.getContext()));
-            mTouchboost.setOnPreferenceChangeListener(new Touchboost(getContext()));
-        } else {
-            getPreferenceScreen().removePreference(findPreference(PREF_MSM_TOUCHBOOST));
-        }
 
         /* mYellowFlash = (YellowFlashPreference) findPreference(KEY_FLASH);
         if (mYellowFlash != null) {

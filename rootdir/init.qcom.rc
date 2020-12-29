@@ -230,13 +230,9 @@ on boot
     chmod 0660 /sys/kernel/sound_control/earpiece_gain
     chmod 0660 /sys/kernel/sound_control/speaker_gain
 
-	# FPS Info
+    # FPS Info
     chown system graphics /sys/class/graphics/fb0/measured_fps
     chmod 0666 /sys/class/graphics/fb0/measured_fps
-
-    # Touchboost
-    chown system system /sys/module/msm_performance/parameters/touchboost
-    chmod 0660 /sys/module/msm_performance/parameters/touchboost
 
     # Charging led
     chown system system /sys/devices/soc/leds-atc-25/driver/leds-atc-25/leds/charging/max_brightness

@@ -1,0 +1,1 @@
+allow ctl_stop_prop ctl_stop_prop:property_service { set };

@@ -254,3 +254,5 @@ allow system_app ctl_dumpstate_prop:file { open read getattr };
 #allow system_app vendor_mm_parser_prop:file { open read getattr };
 #allow system_app vendor_mm_video_prop:file { open read getattr };
 allow system_app vendor_wigig_prop:file { open read getattr };
+#allow system_app vendor_dcvs_prop:file { open read getattr };
+allow system_server ctl_LKCore_prop:file { open read getattr };

@@ -20,3 +20,4 @@ allow tee vendor_data_file:dir { write };
 allow tee vendor_data_file:dir { add_name };
 allow tee vendor_data_file:file { create };
 allow tee vendor_data_file:file { read write open };
+allow tee persist_file:lnk_file { open read getattr };

@@ -5,3 +5,4 @@ allow hal_perf_default init:unix_stream_socket { connectto };
 allow hal_perf_default vendor_default_prop:property_service { set };
 allow hal_perf_default hal_perf_default:capability { sys_admin };
 allow hal_perf_default hal_perf_default:capability { kill };
+allow hal_perf_default proc_meminfo:file { open read getattr };

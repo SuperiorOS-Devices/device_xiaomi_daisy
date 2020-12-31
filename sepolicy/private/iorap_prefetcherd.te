@@ -1,0 +1,3 @@
+allow iorap_prefetcherd dropbox_data_file:file { open read getattr };
+allow iorap_prefetcherd keychain_data_file:dir { search };
+allow iorap_prefetcherd keychain_data_file:file { open read getattr };

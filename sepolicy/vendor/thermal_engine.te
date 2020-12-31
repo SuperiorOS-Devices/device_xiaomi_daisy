@@ -7,6 +7,7 @@ allow thermal-engine system_file:file { read open };
 allow thermal-engine thermal_prop:property_service { set };
 allow thermal-engine thermal-engine:capability { kill };
 allow thermal-engine thermal-engine:capability { sys_admin };
+allow thermal-engine thermal-engine:capability { dac_override };
 r_dir_file(thermal-engine, sysfs)
 allow thermal-engine thermal_prop:file { read };
 allow thermal-engine thermal_prop:file { open };

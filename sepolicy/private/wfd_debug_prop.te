@@ -1,0 +1,1 @@
+allow wfd_debug_prop wfd_debug_prop:file { open read getattr };

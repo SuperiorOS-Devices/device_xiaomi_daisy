@@ -7,3 +7,4 @@ allow cnd wifi_prop:file { getattr };
 #allow cnd hal_slmadapter_hwservice:hwservice_manager find;
 allow cnd diag_device:chr_file { open read write getattr };
 allow cnd diag_device:chr_file { ioctl };
+allow cnd radio:binder { transfer };

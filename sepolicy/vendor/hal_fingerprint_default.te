@@ -43,7 +43,6 @@ allow hal_fingerprint_default mnt_user_file:lnk_file r_file_perms;
 
 set_prop(hal_fingerprint_default, fingerprint_prop)
 
-
 type_transition hal_fingerprint_default system_data_file:{ dir file } gx_fpd_data_file;
 typeattribute hal_fingerprint_default binder_in_vendor_violators;
 
@@ -78,15 +77,15 @@ allow hal_fingerprint_default sdcardfs:dir { write };
 allow hal_fingerprint_default media_rw_data_file:file { append open };
 allow hal_fingerprint_default rootfs:dir { open };
 allow hal_fingerprint_default vfat:file { getattr open read };
-allow hal_fingerprint_default sysfs_leds:dir { search };	
+allow hal_fingerprint_default sysfs_leds:dir { search };
 allow hal_fingerprint_default fpc_sysfs:dir r_dir_perms;
 allow hal_fingerprint_default media_rw_data_file:dir { open read search };
 allow hal_fingerprint_default rootfs:dir { open read };
 allow hal_fingerprint_default sdcardfs:dir { write search };
 allow hal_fingerprint_default sdcardfs:file { getattr open append read };
-allow hal_fingerprint_default sysfs_battery_supply:dir search;	
+allow hal_fingerprint_default sysfs_battery_supply:dir search;
 allow hal_fingerprint_default sysfs_battery_supply:file { open read };
-allow hal_fingerprint_default sysfs_leds:dir search;	
+allow hal_fingerprint_default sysfs_leds:dir search;
 allow hal_fingerprint_default sysfs_leds:file { open read };
 binder_call(hal_fingerprint_default, goodix_fingerprint_vndservice);
 allow hal_fingerprint_default default_android_hwservice:hwservice_manager { add };
@@ -96,3 +95,4 @@ allow hal_fingerprint_default kcal_dev:file { read };
 allow hal_fingerprint_default kcal_dev:file { open };
 allow hal_fingerprint_default vfat:dir { search };
 allow hal_fingerprint_default default_android_hwservice:hwservice_manager { find };
+allow hal_fingerprint_default system_data_root_file:file { open read getattr };

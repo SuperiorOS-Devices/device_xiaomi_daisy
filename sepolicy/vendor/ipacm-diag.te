@@ -1,3 +1,4 @@
-allow ipacm-diag diag_device:chr_file { read write };
+allow ipacm-diag diag_device:chr_file { open read write };
+allow ipacm-diag diag_device:chr_file { ioctl };
 allow ipacm ipacm-diag:unix_dgram_socket { sendto };
 allow ipacm ipacm_socket:sock_file { write };

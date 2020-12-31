@@ -1,0 +1,1 @@
+allow vendor_mm_parser_prop vendor_mm_parser_prop:file { open read getattr };

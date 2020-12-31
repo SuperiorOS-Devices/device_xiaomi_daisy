@@ -1,0 +1,1 @@
+allow vendor_fst_prop vendor_fst_prop:file { open read getattr };

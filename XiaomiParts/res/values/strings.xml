@@ -216,13 +216,13 @@
     <string name="tcpcongestion_dialogTitle">Choose your TCP Congestion Algorithm</string>
 
     <!-- Values for TCP Presets -->
-    <string name="tcpcongestion_westwood">westwood</string>
+    <string name="tcpcongestion_bbr">bbr</string>
     <string name="tcpcongestion_cubic">cubic</string>
     <string name="tcpcongestion_reno">reno</string>
     <string name="tcpcongestion_bic">bic</string>
     <string name="tcpcongestion_highspeed">highspeed</string>
     <string name="tcpcongestion_htcp">htcp</string>
-    <string name="tcpcongestion_bbr">bbr</string>
+    <string name="tcpcongestion_westwood">westwood</string>
     <string name="tcpcongestion_cdg">cdg</string>
     <string name="tcpcongestion_dctcp">dctcp</string>
     <string name="tcpcongestion_hybla">hybla</string>

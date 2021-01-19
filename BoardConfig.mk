@@ -72,7 +72,6 @@ USE_XML_AUDIO_POLICY_CONF := 1
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH_QCOM := true
 QCOM_BT_READ_ADDR_FROM_PROP := true
-TARGET_USE_QTI_BT_STACK := true
 QCOM_BT_USE_BTNV := true
 
 # Bootanimation
@@ -133,8 +132,8 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
-# exFAT / sdfat
-TARGET_EXFAT_DRIVER := sdfat
+# EXFAT
+TARGET_EXFAT_DRIVER := exfat
 
 #FM
 BOARD_HAVE_QCOM_FM := true
@@ -163,7 +162,7 @@ TARGET_RECOVERY_DEVICE_MODULES := //$(DEVICE_PATH):libinit_daisy
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 firmware_class.path=/vendor/firmware_mnt/image androidboot.usbconfigfs=true
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100

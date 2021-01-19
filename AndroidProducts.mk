@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_daisy.mk
+    $(LOCAL_DIR)/superior_daisy.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_daisy-user \
-    xtended_daisy-userdebug \
-    xtended_daisy-eng
+    superior_daisy-user \
+    superior_daisy-userdebug \
+    superior_daisy-eng
